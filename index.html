@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      .board {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      #main-board {
+        width: 798px;
+      }
+      .square {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+      }
+      .highlight {
+        background-color: lightcoral;
+      }
+    </style>
+
+    <!--HTML ***********************************-->
+  </head>
+  <body>
+    <div class="container">
+      <!--Header-->
+      <section>
+        <div>
+          <h1>Bingo</h1>
+          <button id="rngButton" onclick="rng()">RNG</button>
+          <p></p>
+        </div>
+      </section>
+      <!--Main board-->
+      <section>
+        <div id="main-board" class="board"></div>
+      </section>
+      <!--user boards-->
+      <section>
+        <input type="number" value="0" class="numOfUsers" />
+        <button onclick="generateUserBoards()">Generate user boards</button>
+      </section>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

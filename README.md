@@ -1,2 +1,9 @@
-# BRAWEB595_FTO2403_Group-C_Brandon-Webber_Bingo
-Bingo
+- what you learned
+- what you struggled with
+- description of the project
+
+BINGO GAME
+
+- Game board
+- User boards
+- RNG
